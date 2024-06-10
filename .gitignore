@@ -2,12 +2,14 @@
 
 # dependencies
 /node_modules
+/public
+
 /.pnp
 .pnp.js
 
 # testing
 /coverage
-
+/src/components/bargraph/bargraph.test.tsx
 # production
 /build
 

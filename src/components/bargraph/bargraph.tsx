@@ -1,25 +1,6 @@
 import * as React from "react";
 import { cn } from "../../lib/utils";
-
-type BarGraphProps = {
-  children: React.ReactNode;
-  maxValue?: number;
-  className?: string;
-};
-
-type BarValue = {
-  value: number;
-  colorClassName: string;
-  label?: string;
-};
-
-export interface BarProps extends React.ComponentPropsWithoutRef<"div"> {
-  values: BarValue[];
-  label: string;
-  labelclassname?: string;
-  highestValue?: number;
-  colors: string[];
-}
+import { BarGraphProps, BarValue, BarProps } from "./types";
 
 const BarGraph = React.forwardRef<HTMLDivElement, BarGraphProps>(
   ({ className, children, maxValue, ...props }, ref) => {
